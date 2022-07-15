@@ -11,22 +11,41 @@
             @import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@300 & family= Poppins:wght@600 & display=swap');
             body{
                 font-family:'Poppins', sans-serif;
-                background:rgb(127, 199, 233)
+                background:#1C1142;
+                background-image:url(imagens/CONSALA.jpg);
+                background-position:top;
+                background-size: 950px 350px;
+                background-repeat: no-repeat;
+                background-attachment:initial;
             }
 
-            h1{
-                border-style:solid;
-                border-radius: 5px;
+           
+            .login{
                 text-align: center;
-                margin-left: 25%;
-                margin-right: 25%;
-                
-
+                margin: 20% 35%;
+                line-height: 45px;
+                background-color: rgb(221, 208, 208);
+               
+            }
+            .login a{
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
-        <h1>O QUE VOCÊ DESEJA FAZER HOJE ?</h1>
-        <div class=""
+        
+        <div class="login">
+            <fieldset>
+            <form>
+                <legend>LOGIN</legend>
+                <label>CNPJ :</label>
+                <input type="texto" name="CNPJ" required><br>
+                <label>Senha:</label>
+                <input type="password" name="senha" required/><br>
+                <button type="submit" value="Acessar" required>ENTRAR</button><br>
+                <label>Esqueceu sua senha ? <a href="">Clique aqui</a> </label>
+            </form>
+        </fieldset>
+        </div>
     </body>
 </html>
