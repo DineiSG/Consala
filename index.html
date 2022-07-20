@@ -17,33 +17,39 @@
                 background-size: 800px 300px;
                 background-repeat: no-repeat;
                 background-attachment:initial;
+                font-weight: bolder;
+                
             }
             .login{
                 text-align: center;
                 margin: 15% 35%;
                 line-height: 45px;
                 background-color: rgb(221, 208, 208);
-               
+                border-radius: 10px;
             }
             .login a{
                 text-decoration: none;
             }
+            .login button:hover{
+                background-color: rgba(0, 132, 255, 0.986);
+
+            }
+            
         </style>
     </head>
     <body>
         
         <div class="login">
-            <fieldset>
+           
             <form>
                 <legend>LOGIN</legend>
-                <label>CNPJ :</label>
-                <input type="texto" name="CNPJ" required><br>
-                <label>Senha:</label>
-                <input type="password" name="senha" required/><br>
+                <input type="texto" name="CNPJ" required placeholder="CNPJ"><br>
+                <input type="texto" name="usuario" required placeholder="Usuário"><br>
+                <input type="password" name="senha" required placeholder="Senha"/><br>
                 <button type="submit" value="Acessar" required>ENTRAR</button><br>
                 <label>Esqueceu sua senha ? <a href="tela_inicial.html">Clique aqui</a> </label>
             </form>
-        </fieldset>
+       
         </div>
     </body>
 </html>
