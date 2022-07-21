@@ -1,14 +1,31 @@
 import teste from 'readline-sync'
 
+let acesso=teste.question("Informe um usuario e senha: ")
+
+
+
+let Acessos=[
+    {usuario:"José Silva", senha:"mingau"},
+    {usuario:"Ana Silva", senha:"coxinha"},
+    {usuario:"Fernando Limeira", senha:"palmito"}
+]
+
+
 console.log("Banco de dados disponíveis:\nUsuarios\nFuncionarios")
 
 let alternativa=teste.question("Gostaria de consultar qual Banco de Dados ? ")
+
+
+
+
 
 let Usuarios=[
     {nome:"José Roberto Silva", matricula:3550, perfil:"Padrao"},
     {nome:"Ana Clara Silva", matricula:4890, perfil:"Administrador"},
     {nome:"Fernando Limeira", matricula:5050, perfil:"Padrão"}
 ]
+
+
 
 let Funcionarios=[
     {nome:"Carlos André Moreira", matricula:1001, funcao:"Auxiliar Operacional", remuneracao:1500.50},
@@ -23,17 +40,23 @@ let Funcionarios=[
     {nome:"Fernando Limeira", matricula:5050, funcao:"Gerente Geral", remuneracao:3000.10}
 ]
 
+if(Acessos===true){
 
-switch(alternativa)
-{
-    case "Usuarios":
-        console.table(Usuarios)
-        break;
-    case "Funcionarios":
-        console.table(Funcionarios)
-        break;
-    default:
-        console.log("Banco de dados invalido")
-        break;
+    switch(alternativa)
+    {
+        case "Usuarios":
+            console.table(Usuarios)
+            break;
+        case "Funcionarios":
+            console.table(Funcionarios)
+            break;
+        case "Nenhum":
+            console.log("Obrigado !")
+    }
+}
+else{
+    console.log("Até a Proxima !!")
 }
 
+export default (Usuarios,Funcionarios,Acessos) 
+ 
